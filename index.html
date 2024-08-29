@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="Calculadora">
+        <h1>Calculadora de IMC</h1>
+        <form action="calcular_peso">
+            <label for="peso">Peso (kg):<input type="number" id="quilo"></label>
+            <label for="altura">Altura (m):<input type="number" id="altura"></label>
+            <button type="button" onclick="peso()">Calcular IMC</button>
+            <button type="button" onclick="apagar()" class="apagar">Borrar</button>
+            <p id="resultado"></p>
+            <table id="tabla">
+                <tr id="titulo">
+                    <th>IMC</th>
+                    <th>Rango</th>
+                </tr>
+                <tr>
+                    <td>Menos de 18.5</td>
+                    <td>Peso inferior al normal</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>25 - 29.9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>30 o más</td>
+                    <td>Obesidad</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
